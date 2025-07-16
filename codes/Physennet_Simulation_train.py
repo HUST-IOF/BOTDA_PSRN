@@ -90,7 +90,7 @@ if point <36:
     isstride = False
 
 # Load simulation dataset
-data_dict = torch.load(f'./data/Simulation_BGS_20-60ns_5zu_{point}point.pt', weights_only=True)
+data_dict = torch.load(f'../data/Simulation_BGS_20-60ns_5zu_{point}point.pt', weights_only=True)
 BFS = data_dict['BFS']
 SW = data_dict['SW']
 Intensity = data_dict['Intensity']
