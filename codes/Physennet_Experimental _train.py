@@ -77,7 +77,7 @@ frame = 71 # 71:2MHz;36:4MHz;18:8MHz
 pulse = 40 #pulse_values = [60, 50, 40, 30, 20]
 m = 1
 tv_loss = TVLoss(lambda_tv=5e-6)
-BGS = torch.tensor(np.load(f'./data/Experimental_BGS{pulse}ns{m}_{frame}p.npy', allow_pickle=True))
+BGS = torch.tensor(np.load(f'../data/Experimental_BGS{pulse}ns{m}_{frame}p.npy', allow_pickle=True))
 if pulse == 40:#The 40-ns BGS experimental data is 10 meters longer than the others.
     j = 100
 else:j=0
