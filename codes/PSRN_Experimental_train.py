@@ -7,8 +7,7 @@ import time
 from torch import nn,optim
 from scipy.io import savemat
 from torchinfo import summary
-# from model2 import resnet34
-from PhysenNet import resnet34
+from PSRN import resnet34
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(torch.cuda.is_available())
