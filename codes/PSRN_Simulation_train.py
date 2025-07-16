@@ -8,7 +8,7 @@ import time
 from torch import nn, optim
 from scipy.io import savemat
 from torchinfo import summary
-from PhysenNet import resnet34
+from PSRN import resnet34
 
 # Set the computation device (GPU if available)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
