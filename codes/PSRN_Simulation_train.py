@@ -105,7 +105,7 @@ BGS = BGS[:, :, 100:-100]
 idx = pulse_values.index(pulse)
 start = 5000
 end = 5600
-train_BGS = BGS[idx, :, start:end]
+train_BGS = BGS[idx, :, :]
 GT = np.stack((BFS[idx, :], SW[idx, :], Intensity[idx, :]), axis=0)
 
 # Create dataset and dataloader
